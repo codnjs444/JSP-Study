@@ -9,5 +9,13 @@
 	
 	if(color.equals("blue")){
 		msg = "파란색";
+	} else if (color.equals("orange")){
+		msg="오랜지색";
+	} else{
+		color="white";
+		msg="기타색";
 	}
 %>
+<body bgcolor=<%=color%>>
+<b><%=name%></b>님이 좋아하는 색깔은 <b><%=msg%></b>입니다.
+</body>
