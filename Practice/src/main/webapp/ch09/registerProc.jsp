@@ -9,17 +9,18 @@
 <head>
     <title>회원가입 확인</title>
     <link href="style.css" rel="stylesheet" type="text/css">
-    <script language="JavaScript" src="script.js"></script>
 </head>
 
 <body bgcolor="#996600">
-<table width="400" align="center" border="0" cellspacing="0" cellpadding="5">
+<table width="80%" align="center" border="0" cellspacing="0" cellpadding="5">
     <tr>
         <td align="center" valign="middle" bgcolor="#FFFFCC">
             <table width="100%" border="1" cellspacing="0" cellpadding="2" align="center">
                 <form name="regForm" method="post" action="memberInsert.jsp">
                     <tr align="center" bgcolor="#996600">
-                        <td colspan="3"><font color="#FFFFFF"><b>회원가입</b></font></td>
+                        <td colspan="3"><font color="#FFFFFF"><b>
+                        <jsp:getProperty property="name" name="regBean"/>
+                         회원님이 작성하신 내용입니다. 확인해주세요. </b></font></td>
                     </tr>
                     <tr>
                         <td width="300">아이디</td>
